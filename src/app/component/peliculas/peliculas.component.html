@@ -1,0 +1,19 @@
+<main id="main">
+    <section class="cards" >
+        <article class="card" th:each="peliculas: ${tipos_peliculas}" >
+            <div>
+                <img th:src="${peliculas.imagen}" width='100px'/>
+            </div>
+            <div class="nombre-titulo">
+               <span th:text="${peliculas.titulo}"></span>
+            </div>
+            <div class="nombre-producto" style="font-size: 0.9em; color: darkgoldenrod;">
+                <span th:text="${peliculas.sinopsis}"></span>
+            </div>
+            <div class="precio-producto">
+                <span th:text="${peliculas.anyoestreno}"></span>
+            </div>
+        </article><!-- /card-one -->
+        
+    </section>
+</main>
